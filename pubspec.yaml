@@ -1,0 +1,40 @@
+name: pdf_viewer
+description: "Flutter PDF viewer with native rendering (Android PdfRenderer + PDFBox, iOS PDFKit), page text selection, copy and highlights. Bridges via JNI (Android) and FFI (iOS), caches with hive_ce."
+version: 0.1.0
+homepage: https://github.com/SunnatilloShavkatov/pdf_viewer
+repository: https://github.com/SunnatilloShavkatov/pdf_viewer
+issue_tracker: https://github.com/SunnatilloShavkatov/pdf_viewer/issues
+topics:
+  - pdf
+  - pdf-viewer
+  - text-selection
+  - highlight
+
+environment:
+  sdk: ">=3.14.0 <4.0.0"
+  flutter: ">=3.50.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hive_ce: ^2.23.3
+  jni: ^1.1.2
+  material_ui: ^1.11.0
+  objective_c: ^9.6.4
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  analysis_lints: ^1.1.1
+  ffigen: ^23.0.0
+  flutter_test:
+    sdk: flutter
+  jnigen: ^1.0.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: uz.plugin.pdf_viewer
+        pluginClass: PdfViewerPlugin
+      ios:
+        pluginClass: PdfViewerPlugin

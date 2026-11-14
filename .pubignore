@@ -1,0 +1,55 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/pubspec.lock
+/devtools_options.yaml
+
+# Symbolication / obfuscation related
+app.*.symbols
+app.*.map.json
+
+# Android Studio build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# SwiftPM build cache
+**/.build/
+
+# Dev-only files
+/CLAUDE.md
+AGENTS.md
+/tool/
+/test/
+
+# Publish only the example's Dart code (shown on pub.dev's Example tab), not its native projects,
+# build output or device tests
+/example/*
+!/example/lib/
+!/example/assets/
+!/example/pubspec.yaml
+!/example/README.md
